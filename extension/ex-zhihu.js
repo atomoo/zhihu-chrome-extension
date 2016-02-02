@@ -39,14 +39,14 @@
         observer.observe(targets[tarIt], config);
     };
      
-    // var profileDom = document.getElementById('top-nav-profile-dropdown');
-    // if(profileDom){
-    //     var liDom = document.createElement('li');
-    //     liDom.innerHTML =   '<a class="ex-zh-nopic" href="javascrip:void(0)" tabindex="-1">'+
-    //                             '<i class="zg-icon zg-icon-dd-settings"></i>'+'无图'
-    //                         '</a>';
-    //     profileDom.appendChild(liDom);
-    // }
-    // profileDom.getElementsByClassName('ex-zh-nopic')[0].addEventListener('click', function(){
-    // });
+    var profileDom = document.getElementById('top-nav-profile-dropdown');
+    if(profileDom){
+        var liDom = document.createElement('li');
+        liDom.innerHTML =   '<a class="ex-zh-nopic" href="javascrip:void(0)" tabindex="-1">'+
+                                '<i class="zg-icon zg-icon-dd-settings"></i>'+'无图'
+                            '</a>';
+        profileDom.appendChild(liDom);
+    }
+    profileDom.getElementsByClassName('ex-zh-nopic')[0].addEventListener('click', function(){
+    });
 })();
