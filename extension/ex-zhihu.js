@@ -50,6 +50,7 @@
                 btns[btnIt].addEventListener('click', function(e){
                     e.preventDefault();
                     e.target.nextSibling.style.display = 'block';
+                    observe.disconnect();
                 })
             }
           });    
